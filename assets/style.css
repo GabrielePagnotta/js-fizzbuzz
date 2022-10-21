@@ -1,0 +1,8 @@
+.box{
+    display:flex;
+    flex-wrap:wrap;
+    width:80%;
+    font-size: 3rem;
+    margin:30px;
+    
+}

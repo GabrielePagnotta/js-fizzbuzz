@@ -1,27 +1,30 @@
-const span = document.getElementById('num');
+const div = document.getElementById('contenitore');
 
 
 
 for(let i = 1; i <= 100; i++){
 
+
     
     
-    if(i % 3 === 0){
-        span.innerHTML += "Fizz"
+    if(i % 3 === 0 && i % 5 === 0){
+        div.innerHTML += '<div>FizzBuzz</div>'
+
     }
     
     else if(i % 5 === 0){
-        span.innerHTML += "Buzz"
+        div.innerHTML += '<div>Buzz</div>'
         
     }
 
-    else if(i % 3 === 0 && i % 5 === 0){
-        span.innerHTML += "FizzBuzz"
+    else if(i % 3 === 0){
+       
+        div.innerHTML += '<div>Fizz</div>'
         
     }
 
     else{
-        span.innerHTML += i;
+        div.innerHTML +=`<div>${i}</div>` ;
     }
     
 }
